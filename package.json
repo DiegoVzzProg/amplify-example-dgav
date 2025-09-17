@@ -10,10 +10,16 @@
   },
   "dependencies": {
     "@aws-amplify/ui-react": "^6.5.5",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/leaflet": "^1.9.20",
     "aws-amplify": "^6.6.6",
+    "leaflet": "^1.9.4",
     "next": "14.2.10",
+    "postcss": "^8.5.6",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-leaflet": "^4.2.1",
+    "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
     "@aws-amplify/backend": "^1.5.1",

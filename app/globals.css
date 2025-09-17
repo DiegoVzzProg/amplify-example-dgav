@@ -1,62 +1,50 @@
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+@import "tailwindcss";
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: #CBBEFF;
-  --background-end-rgb: 255, 255, 255;
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: #6649AE;
-  --card-border-rgb: 131, 134, 135;
+@theme {
+  --color-blue-50: #f1f0ff;
+  --color-blue-100: #e6e4ff;
+  --color-blue-200: #d0cdff;
+  --color-blue-300: #aea6ff;
+  --color-blue-400: #8773ff;
+  --color-blue-500: #623bff;
+  --color-blue-600: #5014ff;
+  --color-blue-700: #3a00ed;
+  --color-blue-800: #3501d6;
+  --color-blue-900: #2d03af;
+  --color-blue-950: #180077;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
+:root {
+  --color-blue-50: #f1f0ff;
+  --color-blue-100: #e6e4ff;
+  --color-blue-200: #d0cdff;
+  --color-blue-300: #aea6ff;
+  --color-blue-400: #8773ff;
+  --color-blue-500: #623bff;
+  --color-blue-600: #5014ff;
+  --color-blue-700: #3a00ed;
+  --color-blue-800: #3501d6;
+  --color-blue-900: #2d03af;
+  --color-blue-950: #180077;
 }
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 html,
 body {
+  min-width: 375px;
   max-width: 100vw;
+
   overflow-x: hidden;
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  min-height: 100vh;
+  min-height: 100dvh;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  height: 100vh;
+  height: 100dvh;
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+  color: black;
+  background-color: white;
 }
